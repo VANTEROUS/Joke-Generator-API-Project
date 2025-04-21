@@ -5,7 +5,7 @@ import './scss/style.scss';
 const quoteText = document.querySelector('.quote-generator__area-paragraph');
 const quoteGenerateButton = document.querySelector('.quote-generator__link');
 
-quoteGenerateButton.addEventListener('click', async (req, res) => {
+quoteGenerateButton.addEventListener('click', async() => {
     try {
         const response = await fetch('http://localhost:3000/random');
         console.log(JSON.stringify(response))
