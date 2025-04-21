@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "start": "node server.js"
+    "start": "node server/server.js"
   },
   "devDependencies": {
     "sass-embedded": "^1.86.3",
