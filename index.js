@@ -7,7 +7,7 @@ const quoteGenerateButton = document.querySelector('.quote-generator__link');
 
 quoteGenerateButton.addEventListener('click', async() => {
     try {
-        const response = await fetch('http://localhost:3000/random');
+        const response = await fetch('https://joke-generator-api-project.onrender.com');
         console.log(JSON.stringify(response))
         const data = await response.json();
         quoteText.innerHTML = `${data.setup} <br><br> ${data.punchline}`;
