@@ -1,0 +1,63 @@
+@use '/scss/utilities/' as u;
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .quote-generator {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color: var(--c-dark-grey);
+        border-radius: 10px;
+        box-shadow: 0 2px 5px 1px var(--c-black);
+    
+        &__body{
+            text-align: center;
+            color: var(--c-white);
+            padding: 20px;
+        }
+
+        &__header{
+
+        }
+        &__description{
+
+        }
+        &__area{
+            width: 100%;
+            height: 100%;
+            background-color: var(--c-grey);
+            border-radius: 10px;
+            border: none;
+        }
+
+
+        &__buttons{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        &__label{
+            background-color: var(--c-grey);
+            padding: 10px 15px;
+            border-radius: 10px;
+            
+            transition: opacity .15s ease-in-out;
+            
+            &:hover{
+                cursor: pointer;
+                opacity: .5;
+            }
+        }
+        &__link{
+            
+        }
+    
+    }
+}
+

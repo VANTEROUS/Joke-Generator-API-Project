@@ -2,12 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <title>Quote Generator</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+
+    <main id="main" class="quote-generator container-body">
+      <section class="quote-generator__body container-body">
+        <section class="container-interior">
+          <h1 class="container-interior quote-generator__header">Joke Generator</h1>
+          <p class="quote-generator__description">Below you will find your randomly generated joke!</p>
+        </section>
+        <section class="container-interior quote-generator__area">
+          <p class="quote-generator__area-paragraph"></p>
+        </section>
+        <section class="container-interior quote-generator__buttons">
+          <label class="quote-generator__label" for=""><a class="quote-generator__link" href="#">Generate New Joke</a></label>
+        </section>
+      </section>
+    </main>
+
+
+    <script type="module" src="/index.js"></script>
   </body>
 </html>
